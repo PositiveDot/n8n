@@ -37,7 +37,7 @@
     "start:default": "cd packages/cli/bin && ./n8n",
     "start:tunnel": "./packages/cli/bin/n8n start --tunnel",
     "start:windows": "cd packages/cli/bin && n8n",
-	"start:render": "PORT=${PORT:-5678} cd packages/cli/bin && ./n8n",
+	"start:render": "cd packages/cli/bin && ./n8n start --port ${PORT:-5678} --host 0.0.0.0",
     "test": "turbo run test",
     "test:backend": "turbo run test:backend --concurrency=1",
     "test:frontend": "turbo run test:frontend --concurrency=1",
